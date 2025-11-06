@@ -1,0 +1,11 @@
+# Configuration for Heston Monte Carlo data generation
+n_samples: 5000
+S0: [50, 150]
+K: [50, 150]
+T: [0.1, 2.0]
+r: [0.0, 0.05]
+v0: [0.02, 0.3]
+kappa: [1.0, 3.0]
+theta: [0.02, 0.3]
+sigma_v: [0.1, 0.6]
+rho: [-0.8, 0.0]

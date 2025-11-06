@@ -1,0 +1,18 @@
+# Configuration for Bates Monte Carlo data generation
+
+# Heston
+n_samples: 5000
+S0: [50, 150]         # spot price
+K: [50, 150]          # strke price
+T: [0.1, 2.0]         # time to maturity
+r: [0.0, 0.05]        # risk-free interest rate
+v0: [0.02, 0.3]       # inital variance
+kappa: [1.0, 3.0]     # speed at which variance reverts to long-term variance
+theta: [0.02, 0.3]    # long-term variance
+sigma_v: [0.1, 0.6]   # volatility of variance ("vol of vol")
+rho: [-0.8, 0.0]      # correlation between asset and variance
+
+# Bates extra 
+lambda_range: [0.0, 2.0]    # jumps per year
+mu_j_range: [-0.2, 0.2]     # mean of log jump (negative = downward bias)
+sigma_j_range: [0.05, 0.5]  # jump vol
